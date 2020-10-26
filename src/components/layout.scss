@@ -632,6 +632,8 @@ footer {
   margin: 1.3rem 0;
   font-size: .9rem;
   color: #636363;
+  // width: 100%;
+  clear: both;
 
   span {
     margin: 0 .25rem;
@@ -648,4 +650,76 @@ footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1.0875rem 1.45rem,
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inlineblock {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.flex-a-c {
+  align-items: center;
+}
+
+.flex-j-c {
+  align-items: center;
+}
+
+.flex-g-1 {
+  flex-grow: 1;
+}
+
+.pd-root {
+  padding: 0 1.125rem;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.txt-a-c {
+  text-align: center;
+}
+
+.txt-a-r {
+  text-align: right;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-t {
+  font-size: 1.5rem;
+}
+
+.fs-st {
+  font-size: 1.3rem;
+}
+
+.fw-n {
+  font-weight: normal;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.w-100 {
+  width: 100%;
 }
