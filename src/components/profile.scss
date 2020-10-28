@@ -1,3 +1,17 @@
 #profile-root {
+    ul {
+        margin: .5rem 0 0 0;
 
+        li {
+            margin: 0 0.375rem 0 0;
+
+            a {
+                color: rgba(0, 0, 0, .8);
+            }
+        }
+    }
+
+    p {
+        margin: 20px 0;
+    }
 }

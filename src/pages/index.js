@@ -8,7 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="flex">
       <Profile />
-      <section className="pd-root flex-g-1">
+      <section className="pd-root flex-g-3">
         <h2 className="d-block mg-0 txt-a-r fs-st fw-n">0 posts</h2>
       </section>
     </div>
