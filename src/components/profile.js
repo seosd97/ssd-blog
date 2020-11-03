@@ -1,8 +1,8 @@
-import React from "react"
-import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "./profile.scss"
+import React from 'react';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './profile.scss';
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
       <img
         src="https://source.unsplash.com/rU051J7-jqA/180x180"
         alt="profile_icon"
-        style={{ borderRadius: "50%" }}
+        style={{ borderRadius: '50%' }}
       />
       <div id="profile-name">SeungDuk Seo</div>
       <ul>
@@ -36,5 +36,5 @@ export default () => {
         industry.
       </p>
     </section>
-  )
-}
+  );
+};

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 export default () => {
   return (
@@ -8,5 +8,5 @@ export default () => {
         powered by <a href="https://www.gatsbyjs.com">Gatsby</a>
       </span>
     </footer>
-  )
-}
+  );
+};
