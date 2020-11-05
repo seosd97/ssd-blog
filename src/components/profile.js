@@ -2,11 +2,11 @@ import React from 'react';
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './profile.scss';
+import '../styles/profile.scss';
 
 export default () => {
   return (
-    <section id="profile-root" className="pd-root flex-g-1">
+    <section id="profile-root">
       <h2>Author</h2>
       <img
         src="https://source.unsplash.com/rU051J7-jqA/180x180"

@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import Footer from './footer';
-import './layout.scss';
+import '../styles/layout.scss';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <div id="content-root">
+      <div id="content-root" className="pos-rel">
         <main>{children}</main>
       </div>
       <Footer />

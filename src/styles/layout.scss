@@ -1,3 +1,6 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -82,8 +85,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif', Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -261,8 +264,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -278,8 +280,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -295,8 +296,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -312,8 +312,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -329,8 +328,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -629,8 +627,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.3rem 0;
-  font-size: 0.9rem;
+  margin: 2.3rem 0;
+  font-size: 0.8rem;
   color: #636363;
   // width: 100%;
   clear: both;
@@ -647,9 +645,7 @@ footer {
 }
 
 #content-root {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1.0875rem 1.45rem;
+  position: relative;
 }
 
 .d-block {
@@ -676,8 +672,16 @@ footer {
   align-items: center;
 }
 
+.flex-a-e {
+  align-items: flex-end;
+}
+
 .flex-j-c {
-  align-items: center;
+  justify-content: center;
+}
+
+.flex-j-e {
+  justify-content: flex-end;
 }
 
 .flex-g-1 {
@@ -706,6 +710,10 @@ footer {
 
 .mg-0 {
   margin: 0;
+}
+
+.mg-t-50 {
+  margin-top: 50px;
 }
 
 .txt-a-c {
@@ -738,4 +746,38 @@ footer {
 
 .w-100 {
   width: 100%;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-fix {
+  position: fixed;
+}
+
+.side-pos-l {
+  top: 0;
+}
+.card-container {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.card-element {
+  padding: 15px;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.max-w-content {
+  max-width: 960px;
 }

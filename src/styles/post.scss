@@ -1,0 +1,29 @@
+.post-element {
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: #777777;
+    margin-bottom: 10px;
+  }
+
+  .post-description {
+    font-size: 0.75rem;
+    margin-top: 15px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+}

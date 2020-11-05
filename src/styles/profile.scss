@@ -1,4 +1,11 @@
 #profile-root {
+  width: 14.5rem;
+  font-size: 1rem;
+
+  #profile-name {
+    font-weight: bold;
+  }
+
   ul {
     margin: 0.5rem 0 0 0;
 
@@ -12,6 +19,7 @@
   }
 
   p {
+    font-size: 0.9em;
     margin: 20px 0;
   }
 }
