@@ -1,5 +1,5 @@
 import React from 'react';
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/profile.scss';
@@ -16,25 +16,31 @@ export default () => {
       <div id="profile-name">SeungDuk Seo</div>
       <ul>
         <li className="d-inlineblock">
-          <a href="https://github.com/seosd97">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/seosd97">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
         </li>
         <li className="d-inlineblock">
-          <a href="https://www.instagram.com/seosd97/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/seo.seungduk/"
+          >
+            <FontAwesomeIcon icon={faFacebook} size="lg" />
+          </a>
+        </li>
+        <li className="d-inlineblock">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/seosd97/">
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
         </li>
         <li className="d-inlineblock">
-          <a href="mailto:seosd97@gmail.com">
+          <a target="_blank" rel="noopener noreferrer" href="mailto:seosd97@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
           </a>
         </li>
       </ul>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </section>
   );
 };

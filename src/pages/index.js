@@ -15,10 +15,7 @@ const IndexPage = ({ data }) => {
       <div className="flex flex-j-c mg-t-50">
         <Profile />
         <section className="pd-root max-w-content">
-          <h2
-            className="d-block mg-0 fs-st fw-n"
-            style={{ paddingLeft: '1.562rem' }}
-          >
+          <h2 className="d-block mg-0 fs-st fw-n" style={{ paddingLeft: '1.562rem' }}>
             lastest posts
           </h2>
           <div className="card-container flex f-col flex-j-c">

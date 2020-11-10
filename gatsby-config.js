@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "SSD's Blog",
+    title: 'SSD\'s Blog',
     description: '',
     author: 'seosd97',
   },
@@ -13,7 +13,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/blog-posts-md/posts/images`,
       },
     },
     {
@@ -23,7 +23,16 @@ module.exports = {
         path: `${__dirname}/blog-posts-md/posts`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+          },
+        ],
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

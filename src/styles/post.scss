@@ -27,3 +27,23 @@
     background-color: #ebebeb;
   }
 }
+
+#post-root {
+  #post-header {
+    margin-top: 4.375rem;
+    margin-bottom: 3.125rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .posting-date,
+    .post-author {
+      font-size: 0.8rem;
+    }
+  }
+
+  #post-content {
+    max-width: 810px;
+  }
+}
