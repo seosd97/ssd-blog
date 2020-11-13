@@ -3,9 +3,12 @@ import propTypes from 'prop-types';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { graphql } from 'gatsby';
-import { faHashtag } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTags } from '@fortawesome/free-solid-svg-icons';
 import 'prism-themes/themes/prism-vsc-dark-plus.css';
+import Tag from '../components/tag';
+import _ from 'underscore';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TagContainer from '../components/tagContainer';
 
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -14,12 +17,13 @@ const Post = ({ data }) => {
     <Layout>
       <SEO title={frontmatter.title} />
       <section id="post-root" className="pd-root max-w-content mg-auto flex f-col flex-a-c">
-        <div id="post-header" className="flex f-col flex-j-c flex-a-c">
+        <div id="post-header" className="flex f-col flex-j-c flex-a-c w-100">
           <h1>{frontmatter.title}</h1>
-          <div className="posting-date">{frontmatter.date}</div>
-          <div className="post-author fw-b">{frontmatter.author}</div>
+          <div className="header-content">{frontmatter.date}</div>
+          <div className="header-content fw-b">{frontmatter.author}</div>
+          <TagContainer tags={frontmatter.tags} />
         </div>
-        <div id="post-content" dangerouslySetInnerHTML={{ __html: html }}></div>
+        <div id="post-content" className="w-100" dangerouslySetInnerHTML={{ __html: html }}></div>
       </section>
     </Layout>
   );
@@ -38,6 +42,7 @@ export const postQuery = graphql`
         title
         date(formatString: "MMM DD, YYYY")
         author
+        tags
       }
     }
   }

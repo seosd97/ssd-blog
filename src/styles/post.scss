@@ -4,7 +4,11 @@
 
   a {
     text-decoration: none;
-    color: #000000;
+  }
+
+  h2,
+  .post-description {
+    color: #27251f;
   }
 
   h2 {
@@ -20,7 +24,6 @@
 
   .post-description {
     font-size: 0.75rem;
-    margin-top: 15px;
   }
 
   &:hover {
@@ -30,20 +33,24 @@
 
 #post-root {
   #post-header {
-    margin-top: 4.375rem;
+    margin-top: 1.375rem;
     margin-bottom: 3.125rem;
 
     h1 {
       font-size: 1.8rem;
     }
 
-    .posting-date,
-    .post-author {
+    .header-content {
       font-size: 0.8rem;
     }
   }
 
   #post-content {
     max-width: 810px;
+
+    a {
+      color: #27251f;
+      font-weight: bold;
+    }
   }
 }

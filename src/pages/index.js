@@ -46,6 +46,7 @@ export const postsQuery = graphql`
             title
             date(formatString: "MMM DD, YYYY")
             author
+            tags
           }
           fields {
             slug
