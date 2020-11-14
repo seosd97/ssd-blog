@@ -3,16 +3,13 @@ import propTypes from 'prop-types';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { graphql } from 'gatsby';
-import { faTags } from '@fortawesome/free-solid-svg-icons';
 import 'prism-themes/themes/prism-vsc-dark-plus.css';
-import Tag from '../components/tag';
 import _ from 'underscore';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TagContainer from '../components/tagContainer';
 
-const Post = ({ data }) => {
+const Post = ({ data, location }) => {
   const { html, frontmatter } = data.markdownRemark;
-
+  console.log(location);
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -31,11 +28,12 @@ const Post = ({ data }) => {
 
 Post.propTypes = {
   data: propTypes.object,
+  location: propTypes.object,
 };
 
 export const postQuery = graphql`
-  query($path: String) {
-    markdownRemark(fields: { slug: { eq: $path } }) {
+  query($slug: String) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
       frontmatter {
