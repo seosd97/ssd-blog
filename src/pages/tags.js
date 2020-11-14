@@ -4,6 +4,7 @@ import propTypes from 'prop-types';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import Tag from '../components/tag';
+import _ from 'underscore';
 
 const Tags = ({ data }) => {
   const tags = data.allMarkdownRemark.group;
@@ -15,9 +16,10 @@ const Tags = ({ data }) => {
         <section>
           <h2>{`${tags.length} Tags`}</h2>
           <div className="flex f-wrap">
-            {tags.map((t, i) => {
-              return <Tag key={i} desc={t.fieldValue} />;
-            })}
+            {!_.isEmpty(tags) &&
+              tags.map((t, i) => {
+                return <Tag key={i} desc={t.fieldValue} />;
+              })}
           </div>
         </section>
         {/* {tags.map((t, i) => {
