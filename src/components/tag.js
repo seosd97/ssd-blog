@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 const Tag = ({ desc }) => {
-  return <Link to="/" className="tag">{`# ${desc}`}</Link>;
+  return <Link to={`/tags#${desc}`} className="tag">{`# ${desc}`}</Link>;
 };
 
 Tag.propTypes = {

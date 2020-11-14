@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <div className="flex flex-j-c mg-t-50">
         <Profile />
-        <section className="pd-root max-w-content">
+        <section className="pd-root content-wrapper-l">
           <h2 className="d-block mg-0 fs-st fw-n" style={{ paddingLeft: '1.562rem' }}>
             lastest posts
           </h2>

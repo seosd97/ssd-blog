@@ -16,7 +16,7 @@ const Post = ({ data }) => {
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <section id="post-root" className="pd-root max-w-content mg-auto flex f-col flex-a-c">
+      <section id="post-root" className="pd-root content-wrapper-l mg-auto flex f-col flex-a-c">
         <div id="post-header" className="flex f-col flex-j-c flex-a-c w-100">
           <h1>{frontmatter.title}</h1>
           <div className="header-content">{frontmatter.date}</div>
