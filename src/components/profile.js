@@ -8,11 +8,7 @@ export default () => {
   return (
     <section id="profile-root">
       <h2>Author</h2>
-      <img
-        src="https://source.unsplash.com/rU051J7-jqA/180x180"
-        alt="profile_icon"
-        style={{ borderRadius: '50%' }}
-      />
+      <img src="images/profile_img.jpg" alt="profile_icon" style={{ borderRadius: '50%' }} />
       <div id="profile-name">SeungDuk Seo</div>
       <ul>
         <li className="d-inlineblock">
@@ -40,7 +36,7 @@ export default () => {
           </a>
         </li>
       </ul>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p>A programmer who slowly but surely seeking to learn wanna be.</p>
     </section>
   );
 };
