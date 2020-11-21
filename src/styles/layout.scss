@@ -614,16 +614,6 @@ header {
       color: black;
     }
   }
-
-  // ul {
-  //   margin: 0;
-  //   margin-left: auto;
-  //   li {
-  //     display: inline-block;
-  //     margin: 0;
-  //     padding: 0;
-  //   }
-  // }
 }
 
 footer {
@@ -650,7 +640,7 @@ footer {
 
 #content-root {
   position: relative;
-  min-height: calc(100vh - 9.975rem);
+  // min-height: calc(100vh - 200px);
 }
 
 .d-block {
