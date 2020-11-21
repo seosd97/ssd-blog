@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="SSD's Blog" />
       <div className="flex flex-j-c mg-t-50">
         <Profile />
         <section className="pd-root content-wrapper-l">
