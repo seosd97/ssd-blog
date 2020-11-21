@@ -36,7 +36,7 @@ export default () => {
           </a>
         </li>
       </ul>
-      <p>A programmer who slowly but surely seeking to learn wanna be.</p>
+      <p>A programmer who slowly but surely seeking to learn. wanna be.</p>
     </section>
   );
 };

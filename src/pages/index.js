@@ -41,7 +41,7 @@ export const postsQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 200)
+          excerpt(truncate: true, pruneLength: 200)
           frontmatter {
             title
             date(formatString: "MMM DD, YYYY")
