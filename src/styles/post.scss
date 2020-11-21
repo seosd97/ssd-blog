@@ -47,14 +47,13 @@
 
   #post-content {
     max-width: 810px;
+    line-height: 1.8rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 
     a {
       color: #27251f;
       font-weight: bold;
-    }
-
-    p {
-      line-height: 1.7rem;
     }
   }
 }
