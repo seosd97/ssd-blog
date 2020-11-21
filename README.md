@@ -1,4 +1,4 @@
-# [SSD's Blog](https://upbeat-kowalevski-40a5b2.netlify.app/)
+# [SSD's Blog](https://seosd.me/)
 
 Developed using [GatsbyJS](https://www.gatsbyjs.com/)
 Deploy by [Netlify](https://netlify.com)
