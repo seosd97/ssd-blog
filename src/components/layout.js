@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Header siteTitle={data.site.siteMetadata?.title || 'Title'} />
+      <Header siteTitle={data.site.siteMetadata?.title || 'SSD\'sBlog'} />
       <div id="content-root" className="pos-rel">
         <main>{children}</main>
       </div>
