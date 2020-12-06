@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
         <Profile />
         <section className="pd-root content-wrapper-l">
           <h2 className="d-block mg-0 fs-st fw-n" style={{ paddingLeft: '1.562rem' }}>
-            lastest posts
+            latest posts
           </h2>
           <div className="card-container flex f-col flex-j-c">
             {edges.map((e, i) => {
