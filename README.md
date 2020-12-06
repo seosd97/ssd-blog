@@ -1,6 +1,6 @@
 # [SSD's Blog](https://seosd.me/)
 
-Developed using [GatsbyJS](https://www.gatsbyjs.com/)
+Build with [GatsbyJS](https://www.gatsbyjs.com/)
 Deploy by [Netlify](https://netlify.com)
 
 ## License
