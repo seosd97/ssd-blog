@@ -6,6 +6,7 @@ import { graphql } from 'gatsby';
 import 'prism-themes/themes/prism-vsc-dark-plus.css';
 import _ from 'underscore';
 import TagContainer from '../components/tagContainer';
+import Utterances from '../components/utterances';
 
 const Post = ({ data, location }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -21,6 +22,9 @@ const Post = ({ data, location }) => {
           <TagContainer tags={frontmatter.tags} />
         </div>
         <div id="post-content" className="w-100" dangerouslySetInnerHTML={{ __html: html }}></div>
+        <div id="post-comment-container">
+          <Utterances />
+        </div>
       </section>
     </Layout>
   );
