@@ -10,6 +10,13 @@ module.exports = {
     'gatsby-plugin-slug',
     'gatsby-plugin-react-helmet',
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'G-HCLY9VC63B',
+        head: true
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -45,13 +52,6 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'G-HCLY9VC63B',
-        head: true
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
