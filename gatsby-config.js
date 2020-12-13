@@ -13,7 +13,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'G-8WG06YM3WX',
-        head: true
+        head: true,
       },
     },
     {
@@ -34,6 +34,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              elements: ['h2', 'h3'],
+            }
+          },
           {
             resolve: 'gatsby-remark-prismjs',
           },
