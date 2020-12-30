@@ -35,6 +35,14 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1100,
+              linkImagesToOriginal: false,
+              tracedSVG: true,
+            },
+          },
+          {
             resolve: 'gatsby-remark-autolink-headers',
             options: {
               elements: ['h2', 'h3'],
