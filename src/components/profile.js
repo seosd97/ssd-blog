@@ -26,17 +26,15 @@ export default () => {
           </a>
         </li>
         <li className="d-inlineblock">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/seosd97/">
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </a>
-        </li>
-        <li className="d-inlineblock">
           <a target="_blank" rel="noopener noreferrer" href="mailto:seosd97@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
           </a>
         </li>
       </ul>
-      <p>A programmer who slowly but surely seeking to learn. wanna be.</p>
+      <p style={{ whiteSpace: 'pre-wrap' }}>
+        Front End Developer.{'\n'}Interested in Web tech, javascript and Love to try new tech. ( ´ ω
+        ` )
+      </p>
     </section>
   );
 };
