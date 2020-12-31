@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import propTypes from 'prop-types';
+import 'prism-themes/themes/prism-vsc-dark-plus.css';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { graphql } from 'gatsby';
-import 'prism-themes/themes/prism-vsc-dark-plus.css';
 import _ from 'underscore';
 import TagContainer from '../components/tagContainer';
 import Utterances from '../components/utterances';
