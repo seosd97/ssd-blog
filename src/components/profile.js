@@ -32,8 +32,8 @@ export default () => {
         </li>
       </ul>
       <p style={{ whiteSpace: 'pre-wrap' }}>
-        Front End Developer.{'\n'}Interested in Web tech, javascript and Love to try new tech. ( ´ ω
-        ` )
+        React-Native app developer.{'\n'}Interested in Web Tech.{'\n'}Love to try new tech.
+        {'\n'}( ´ ω ` )
       </p>
     </section>
   );

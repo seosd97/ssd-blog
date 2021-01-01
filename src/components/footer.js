@@ -12,7 +12,7 @@ export default () => {
           </a>
         </li>
         <li>
-          Deployed by
+          Deployed by{' '}
           <a target="_blank" rel="noopener noreferrer" href="https://www.netlify.com">
             Netlify
           </a>
