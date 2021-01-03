@@ -20,7 +20,7 @@ export default () => {
         <li>
           Source on{' '}
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/seosd97/ssd-blog">
-            Github
+            GitHub
           </a>
         </li>
       </ul>
